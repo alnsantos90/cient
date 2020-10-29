@@ -661,12 +661,13 @@
                                         <div class="service-project-slide-info">
                                             <h4 class="heading font-weight--reguler mb-10">Sobre a oferta
                                             </h4>
-                                            <p class="sub-text text-color-primary">Regras:</p>
+                                            <p class="sub-text text-color-primary">Regras Portabilidade:</p>
                                             <div class="text">Só na CIENT o cliente ganha em dobro, assine agora um plano e garanta instalação gratis, pague a primeira mensalidade em 30 dias, ainda concorra a prêmios.
                                             </div>
                                             <p class="sub-text text-color-primary my-2">- 2 mensalidade grátis</p>
                                             <p class="sub-text text-color-primary my-2">- Para os amantes de games 1000 diamantes para Free Fire</p>
                                             <p class="sub-text text-color-primary my-2">- 1 TV Smart 32</p>
+                                            <button type="button" onclick="getRegras()" data-toggle="modal" data-target="#regrasSorteio" regras="sorteio" class="btn btn-lg btn-block btn-outline-primary btn-corporativo">REGRAS DO SORTEIO</button>
                                         </div>
                                     </div>
 
@@ -962,12 +963,33 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Datelhes</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Detalhes</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body" textModal>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-Primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal REGRAS -->
+    <div class="modal fade bd-example-modal-lg" id="regrasSorteio" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Detalhes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" textRegras>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-Primary" data-dismiss="modal">OK</button>
